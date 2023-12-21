@@ -1,0 +1,20 @@
+.navbar-container {
+
+    background-color: #445247;
+
+    .navbar-right {
+        .social {
+            a:hover {
+                transform: scale(1.2);
+            }
+
+            .social-item {
+                margin-right: 60px;
+            }
+
+            a {
+                color: #00bf63;
+            }
+        }
+    }
+}
