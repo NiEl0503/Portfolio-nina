@@ -1,0 +1,27 @@
+.about-container {
+    background: rgb(201, 198, 199);
+    margin: 0 50px;
+    position: relative;
+    padding-top: 1%;
+
+    .qualification-container {
+        .faceImg {
+            border-radius: 50%;
+            width: 10%;
+            position: absolute;
+            top: -5vw;
+            left: 7%;
+        } 
+
+        .qualification {
+            font-size: 1.5rem;
+            margin-top: 20%;
+            color: #946d50;
+        }
+    }
+
+    .text-about{
+        color: #946d50;
+        font-size: 1rem;
+    }
+}
