@@ -1,0 +1,25 @@
+.project-container {
+    color: #946d50;
+    background: rgb(224, 220, 221);
+    margin: 0 50px;
+    padding-top: 50px;
+
+    img.img-project {
+        width: 200px;
+        height: 200px;
+    }
+
+    .text-project {
+        margin-left: 3rem;
+
+        h5 {
+            font-size: 2.5rem;
+        }
+
+        .project-description {
+            font-size: 1.75rem;
+        }
+    }
+
+    
+}
