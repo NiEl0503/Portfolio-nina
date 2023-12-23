@@ -9,16 +9,16 @@ import { ProjectListService } from 'src/app/services/project-list.service';
 })
 
 export class ProjectsComponent implements OnInit {
-title: string = "Projetos realizados";
+  title: string = "Projetos realizados";
 
   projectList: ProjectModel[] = [];
 
-  constructor(private projectListService: ProjectListService) {}
+  constructor(private projectListService: ProjectListService) { }
   ngOnInit(): void {
-   this.getProjectList();
+    this.getProjectList();
   }
 
   getProjectList(): void {
-   this.projectList = this.projectListService.getProjects();
+    this.projectListService.getProjects().subscribe((projectList) => { this.projectList = projectList });
   }
 }
