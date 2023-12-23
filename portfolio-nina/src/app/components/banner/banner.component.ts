@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./banner.component.scss']
 })
 export class BannerComponent {
-  name: string = "Ninoska Contreras";
+  name: string = "Eu sou Ninoska Contreras";
   urlImg: string = "../../../assets/img/banner.png";
   photo: string = `url('${this.urlImg}')`;
 }
