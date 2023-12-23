@@ -1,4 +1,6 @@
-import { Component, Input } from '@angular/core';
+import { Component } from '@angular/core';
+import { ProjectModel } from 'src/app/models/project.model';
+import { PROJECT } from 'src/assets/files/mock-project';
 
 @Component({
   selector: 'app-projects',
@@ -9,36 +11,5 @@ import { Component, Input } from '@angular/core';
 export class ProjectsComponent {
 title: string = "Projetos realizados";
 
-  projectList = [
-  {
-    "id": 1,
-    "title": "BurgerBots",
-    "urlImage": "../../../assets/img/logoNC.png",
-    "description": "xx"
-  },
-  {
-    "id": 2,
-    "title": "ExplorAi",
-    "urlImage": "../../../assets/img/logoNC.png",
-    "description": "xx"
-  },
-  {
-    "id": 3,
-    "title": "PokeData Go",
-    "urlImage": "../../../assets/img/logoNC.png",
-    "description": "xx"
-  },
-  {
-    "id": 4,
-    "title": "Markdowns",
-    "urlImage": "../../../assets/img/logoNC.png",
-    "description": "xx"
-  },
-  {
-    "id": 5,
-    "title": "Sistema Bancario",
-    "urlImage": "../../../assets/img/logoNC.png",
-    "description": "xx"
-  },
-];
+  projectList: ProjectModel[] = PROJECT;
 }
