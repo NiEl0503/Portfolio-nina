@@ -1,6 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { ProjectModel } from 'src/app/models/project.model';
-import { PROJECT } from 'src/assets/files/mock-project';
+import { ProjectListService } from 'src/app/services/project-list.service';
 
 @Component({
   selector: 'app-projects',
@@ -8,8 +8,17 @@ import { PROJECT } from 'src/assets/files/mock-project';
   styleUrls: ['./projects.component.scss']
 })
 
-export class ProjectsComponent {
+export class ProjectsComponent implements OnInit {
 title: string = "Projetos realizados";
 
-  projectList: ProjectModel[] = PROJECT;
+  projectList: ProjectModel[] = [];
+
+  constructor(private projectListService: ProjectListService) {}
+  ngOnInit(): void {
+   this.getProjectList();
+  }
+
+  getProjectList(): void {
+   this.projectList = this.projectListService.getProjects();
+  }
 }
