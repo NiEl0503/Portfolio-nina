@@ -1,0 +1,22 @@
+.footer-container {
+    background: #c9c6c7;
+    margin: 0 50px;
+    position: relative;
+    padding-top: 1%;
+
+    .title {
+        font-size: 1rem;
+        color: #bb8e6c;
+        animation: slideAnimation 3s ease-in-out infinite alternate;
+    }
+
+    @keyframes slideAnimation {
+        0% {
+            transform: translateX(0);
+        }
+
+        100% {
+            transform: translateX(40px);
+        }
+    }
+}
