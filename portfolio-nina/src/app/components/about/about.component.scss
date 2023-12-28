@@ -6,15 +6,32 @@
 
     .qualification-container {
         .faceImg {
-            border-radius: 50%;
+
             width: 10%;
             position: absolute;
             top: -5vw;
             left: 7%;
-        } 
+
+            border-radius: 50%;
+            animation: borderAnimate 5s ease-in-out infinite alternate;
+        }
+
+        @keyframes borderAnimate {
+            0% {
+                border: 3px solid #b19a89;
+            }
+
+            50% {
+                border: 3px solid #4c9a74;
+            }
+
+            100% {
+                border: 3px solid #b19a89;
+            }
+        }
     }
 
-    .text-about{
+    .text-about {
         color: #946d50;
         font-size: 1rem;
     }
